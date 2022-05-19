@@ -91,6 +91,7 @@ namespace Proyecto_final_Herramientas.Interfaces
         {
             try
             {
+                this.Visible = false;
                 var registro = new Registro();
                 registro.ShowDialog();
             }
@@ -113,6 +114,22 @@ namespace Proyecto_final_Herramientas.Interfaces
             {
                 MessageBox.Show($"Ha ocurrido un error: {ex.Message}", "Error");
             }
+        }
+
+        private void TXT_Clave_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Clave.ForeColor = Color.DimGray;
+            TXT_Clave.PasswordChar = '*';
+        }
+
+        private void TXT_Usuario_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Clave.ForeColor = Color.DimGray;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

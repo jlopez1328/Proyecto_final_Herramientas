@@ -72,6 +72,7 @@ namespace Proyecto_final_Herramientas.Interfaces
 
                 if (usuario == null)
                 {
+                    //Agregamos el nuevo usuario a la lista de usuarios
                     usuarios.Add(new Usuario
                     {
                         Clave = TXT_Clave.Text,

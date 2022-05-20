@@ -71,8 +71,8 @@ namespace Proyecto_final_Herramientas.Interfaces
                 {
                     this.Visible = false;
                     //Crear nuevo forms
-                    var registro = new Registro();
-                    registro.ShowDialog();
+                    var menu_principal = new Menu_Principal();
+                    menu_principal.ShowDialog();
                 }
                 else
                 {
@@ -130,6 +130,11 @@ namespace Proyecto_final_Herramientas.Interfaces
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -111,5 +111,10 @@ namespace Proyecto_final_Herramientas.Interfaces
         {
             TXT_Clave.ForeColor = Color.DimGray;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

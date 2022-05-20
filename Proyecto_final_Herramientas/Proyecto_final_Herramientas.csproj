@@ -57,6 +57,24 @@
   <ItemGroup>
     <Compile Include="Helpers\Modelos\Usuario.cs" />
     <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Interfaces\Bebidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Bebidas.Designer.cs">
+      <DependentUpon>Bebidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Comidas_Rapidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Comidas_Rapidas.Designer.cs">
+      <DependentUpon>Comidas_Rapidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Entradas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Entradas.Designer.cs">
+      <DependentUpon>Entradas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +87,12 @@
     <Compile Include="Interfaces\Menu_Principal.Designer.cs">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Platos_fuertes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Platos_fuertes.Designer.cs">
+      <DependentUpon>Platos_fuertes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +101,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaces\Bebidas.resx">
+      <DependentUpon>Bebidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Menu_Principal.resx">
+      <DependentUpon>Menu_Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>

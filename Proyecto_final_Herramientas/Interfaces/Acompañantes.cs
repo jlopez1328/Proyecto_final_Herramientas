@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_final_Herramientas.Interfaces
 {
-    public partial class Entradas : Form
+    public partial class Acompañantes : Form
     {
-        public Entradas()
+        public Acompañantes()
         {
             InitializeComponent();
         }

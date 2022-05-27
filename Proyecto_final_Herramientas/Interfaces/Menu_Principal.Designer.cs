@@ -90,11 +90,11 @@ namespace Proyecto_final_Herramientas.Interfaces
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DimGray;
-            this.label2.Location = new System.Drawing.Point(109, 144);
+            this.label2.Location = new System.Drawing.Point(69, 144);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 23);
+            this.label2.Size = new System.Drawing.Size(167, 23);
             this.label2.TabIndex = 2;
-            this.label2.Text = "ENTRADAS";
+            this.label2.Text = "ACOMPAÑANTES";
             // 
             // label3
             // 

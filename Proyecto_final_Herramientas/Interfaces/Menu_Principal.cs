@@ -42,7 +42,7 @@ namespace Proyecto_final_Herramientas.Interfaces
             try
             {
                 this.Visible = false;
-                var entradas = new Entradas();
+                var entradas = new Acompañantes();
                 entradas.ShowDialog();
             }
             catch (Exception ex)

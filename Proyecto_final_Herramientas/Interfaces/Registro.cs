@@ -99,6 +99,7 @@ namespace Proyecto_final_Herramientas.Interfaces
         {
             TXT_Clave.ForeColor = Color.DimGray;
             TXT_Clave.PasswordChar = '*';
+            
         }
 
         private void TXT_VerificarClave_TextChanged(object sender, EventArgs e)

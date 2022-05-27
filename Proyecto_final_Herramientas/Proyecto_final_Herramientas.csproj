@@ -90,11 +90,11 @@
     <Compile Include="Interfaces\Comidas_Rapidas.Designer.cs">
       <DependentUpon>Comidas_Rapidas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interfaces\Entradas.cs">
+    <Compile Include="Interfaces\Acompañantes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\Entradas.Designer.cs">
-      <DependentUpon>Entradas.cs</DependentUpon>
+    <Compile Include="Interfaces\Acompañantes.Designer.cs">
+      <DependentUpon>Acompañantes.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Login.cs">
       <SubType>Form</SubType>
@@ -122,6 +122,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaces\Acompañantes.resx">
+      <DependentUpon>Acompañantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Bebidas.resx">
       <DependentUpon>Bebidas.cs</DependentUpon>
     </EmbeddedResource>

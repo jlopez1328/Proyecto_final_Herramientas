@@ -880,7 +880,6 @@ namespace Proyecto_final_Herramientas.Interfaces
             this.TXT_PostobonCant.Name = "TXT_PostobonCant";
             this.TXT_PostobonCant.Size = new System.Drawing.Size(21, 20);
             this.TXT_PostobonCant.TabIndex = 97;
-                
             // 
             // textBox19
             // 
@@ -1174,7 +1173,7 @@ namespace Proyecto_final_Herramientas.Interfaces
             this.Factura.Name = "Factura";
             this.Factura.Size = new System.Drawing.Size(75, 23);
             this.Factura.TabIndex = 130;
-            this.Factura.Text = "button1";
+            this.Factura.Text = "Pre Factura";
             this.Factura.UseVisualStyleBackColor = true;
             this.Factura.Click += new System.EventHandler(this.Factura_Click);
             // 

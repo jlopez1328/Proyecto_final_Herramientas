@@ -17,7 +17,8 @@ namespace Proyecto_final_Herramientas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            //Application.Run(new Login());
+            Application.Run(new Menu_Principal());
         }
     }
 }

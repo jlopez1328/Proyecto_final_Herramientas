@@ -8,6 +8,7 @@ namespace Proyecto_final_Herramientas.Helpers
 		private static ISettings AppSettings => CrossSettings.Current;
 
 		private const string _usuarios = "Usuarios";
+		private const string _productos = "Productos";
 
 		private static readonly string _stringDefault = "";
 
@@ -16,6 +17,12 @@ namespace Proyecto_final_Herramientas.Helpers
 		{
 			get => AppSettings.GetValueOrDefault(_usuarios, _stringDefault);
 			set => AppSettings.AddOrUpdateValue(_usuarios, value);
+		}
+
+		public static string Productos
+        {
+			get => AppSettings.GetValueOrDefault(_productos, _stringDefault);
+			set => AppSettings.AddOrUpdateValue(_productos, value);
 		}
 
 	}

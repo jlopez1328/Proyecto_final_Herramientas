@@ -76,8 +76,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\Modelos\Producto.cs" />
     <Compile Include="Helpers\Modelos\Usuario.cs" />
+    <Compile Include="Helpers\Publico.cs" />
     <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Interfaces\Bebidas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Bebidas2.Designer.cs">
+      <DependentUpon>Bebidas2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Bebidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +110,9 @@
     <Compile Include="Interfaces\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\ManejoProductoInterfaz.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Interfaces\Menu_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +125,12 @@
     <Compile Include="Interfaces\Platos_fuertes.Designer.cs">
       <DependentUpon>Platos_fuertes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\PreFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\PreFactura.Designer.cs">
+      <DependentUpon>PreFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +142,9 @@
     <EmbeddedResource Include="Interfaces\Acompañantes.resx">
       <DependentUpon>Acompañantes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Bebidas2.resx">
+      <DependentUpon>Bebidas2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Bebidas.resx">
       <DependentUpon>Bebidas.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +153,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Menu_Principal.resx">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Platos_fuertes.resx">
+      <DependentUpon>Platos_fuertes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\PreFactura.resx">
+      <DependentUpon>PreFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>

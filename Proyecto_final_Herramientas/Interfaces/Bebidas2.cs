@@ -7,12 +7,13 @@ using System.Windows.Forms;
 
 namespace Proyecto_final_Herramientas.Interfaces
 {
-    public partial class Bebidas2 : ManejoProductoInterfaz
+    public partial class Bebidas : ManejoProductoInterfaz
     {
-        public Bebidas2()
+        public Bebidas()
         {
             InitializeComponent();
             CHK_Cocacola_CheckedChanged(null, null);
+            CHK_Postobon_CheckedChanged(null, null);
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -93,6 +94,21 @@ namespace Proyecto_final_Herramientas.Interfaces
                         Nombre = LBL_CocaColaNombre.Text,
                         Valor = decimal.Parse(LBL_CocacolaPrecio.Text)
                     });
+
+                    if (CHK_Postobon.Checked && Publico.EsNumero(TXT_PostobonCant.Text) && Publico.EsNumero(LBL_PostobonPrecio.Text))
+                    {
+                        ActualizarProducto(new Producto
+                        {
+                            Cantidad = decimal.Parse(TXT_PostobonCant.Text),
+                            Id = LBL_PostobonCodigo.Text,
+                            Nombre = LBL_PostobonNombre.Text,
+                            Valor = decimal.Parse(LBL_PostobonPrecio.Text)
+                        });
+                    }
+                    else
+                    {
+                        EliminarProducto(LBL_PostobonCodigo.Text);
+                    }
                 } 
                 else
                 {
@@ -106,6 +122,7 @@ namespace Proyecto_final_Herramientas.Interfaces
             {
 
             }
+          
         }
 
         private void CHK_Cocacola_CheckedChanged(object sender, EventArgs e)
@@ -122,5 +139,39 @@ namespace Proyecto_final_Herramientas.Interfaces
             }
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Factura_Click(object sender, EventArgs e)
+        {
+            Form pre_factura = new PreFactura();
+            pre_factura.ShowDialog();
+        }
+
+        private void TXT_CocaColaCant_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CHK_Postobon_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CHK_Postobon.Checked)
+            {
+                TXT_PostobonCant.Text = "";
+                TXT_PostobonCant.Enabled = true;
+            }
+            else
+            {
+                TXT_PostobonCant.Text = "";
+                TXT_PostobonCant.Enabled = false;
+            }
+        }
+
+        private void LBL_PostobonCodigo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
